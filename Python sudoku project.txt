@@ -1,0 +1,60 @@
+
+board = [
+	[7,8,0,4,0,0,1,2,0],
+	[6,0,0,0,7,5,0,0,9],
+	[0,0,0,6,0,1,0,7,8],
+	[0,0,7,0,4,0,2,6,0],
+	[0,0,1,0,5,0,9,3,0],
+	[9,0,4,0,6,0,0,0,5],
+	[0,7,0,3,0,0,0,1,2],
+	[1,2,0,0,0,7,4,0,0],
+	[0,4,9,2,0,6,0,0,7]
+]
+
+# In the first place we want to see the board
+# so we create a function that will print the board named bo.
+
+def print_board(bo):
+
+
+
+
+
+# Everytime we are on the third row we'll print a horizontal line in the LEN of the BOard
+# % modulus?
+
+	for i in range(len(bo)):
+		if i % 3 == 0 and i != 0:
+			print("- - - - - - - - - - - - -")
+
+# For every position on the row we'll check if it's the third element
+# in the LEN of every row
+# and will write a horizontal line
+# but not in the left of the row, that;s why we add and j != 0
+
+	for j in range(len(bo[0])):
+		if j % 3 == 0 and j != 0:
+			print(" | ", end="")
+
+
+		if j == 8:
+			print(bo[i] [j])
+		else:
+			print(str(bo[i] [j]) + " ", end="")
+
+# Stay on the same line while we are printing this end="" 
+		
+print board(board)
+
+
+
+
+# First function of this programm:
+# Given a board, find the empty space
+
+def find_empty(bo):
+	for i in range(len(bo)):
+		for j in range(len(bo[o])):
+			if bo[i] [j] == 0:
+				return (i,j) #row, column
+		
